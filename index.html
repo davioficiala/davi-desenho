@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meus Desenhos</title>
+
+<style>
+
+body{
+    margin:0;
+    background:#111;
+    color:white;
+    font-family:Arial;
+}
+
+header{
+    text-align:center;
+    padding:30px;
+    background:#000;
+}
+
+h1{
+    margin:0;
+}
+
+.galeria{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+.card{
+    display:flex;
+    gap:20px;
+    background:#1b1b1b;
+    padding:20px;
+    margin-bottom:30px;
+    border-radius:15px;
+}
+
+.img-box{
+    flex:1;
+    text-align:center;
+}
+
+.img-box img{
+    width:100%;
+    border-radius:10px;
+}
+
+.titulo{
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+.seta{
+    font-size:50px;
+    display:flex;
+    align-items:center;
+}
+
+@media(max-width:700px){
+
+.card{
+    flex-direction:column;
+}
+
+.seta{
+    justify-content:center;
+    transform:rotate(90deg);
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>MEUS DESENHOS</h1>
+<p>Do lápis para a ilustração</p>
+</header>
+
+<div class="galeria">
+
+<div class="card">
+
+<div class="img-box">
+<div class="titulo">Desenho Original</div>
+
+<img src="img/desenho1.jpg">
+
+</div>
+
+<div class="seta">➡️</div>
+
+<div class="img-box">
+<div class="titulo">Ilustração Final</div>
+
+<img src="img/ilustracao1.jpg">
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="img-box">
+<div class="titulo">Desenho Original</div>
+
+<img src="img/desenho2.jpg">
+
+</div>
+
+<div class="seta">➡️</div>
+
+<div class="img-box">
+<div class="titulo">Ilustração Final</div>
+
+<img src="img/ilustracao2.jpg">
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
